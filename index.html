@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+  <div id="header">
+  <div id ="toggle"></div>
+  </div>
+  <div id="sidebar">
+      <div class="profile">
+                <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg" alt="profile_picture">
+                <h3>Anamika Roy</h3>
+                <p>Designer</p>
+            </div>
+
+            <ul>
+                 <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">My Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">People</span>
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+
+
+  
+<div class="table-container">
+    <h1>Lesson</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Chapter</th>
+          <th>Title</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="#">1</td>
+          <td data-label="Chapter">sample docs</td>
+          <td data-label="Title">Computer Programming</td>
+          <td data-label="Action"><a href="#" class="btn">
+          View File</a></td>
+        </tr>
+
+        <tr>
+          <td data-label="#">2</td>
+          <td data-label="Chapter">sample video</td>
+          <td data-label="Title">HCI</td>
+          <td data-label="Action"><a href="#" class="btn">
+          View File</a></td>
+        </tr>
+
+        <tr>
+          <td data-label="#">3</td>
+          <td data-label="Chapter">Activity</td>
+          <td data-label="Title">Web Development</td>
+          <td data-label="Action"><a href="#" class="btn">
+          View File</a></td>
+        </tr>
+
+        <tr>
+          <td data-label="#">4</td>
+          <td data-label="Chapter">Reviewer</td>
+          <td data-label="Title">System Development Life Cycle</td>
+          <td data-label="Action"><a href="#" class="btn">
+          View File</a></td>
+        </tr>
+      </tbody>    
+    </table>
+    
+  </div>
+
+        <nav class="nav">
+            <a href="#" class="nav__link">
+              <i class="material-icons nav__icon">dashboard</i>
+              <span class="nav__text">Dashboard</span>
+            </a>
+            <a href="#" class="nav__link">
+              <i class="material-icons nav__icon">person</i>
+              <span class="nav__text">Profile</span>
+            </a>
+            <a href="#" class="nav__link">
+              <i class="material-icons nav__icon">devices</i>
+              <span class="nav__text">Devices</span>
+            </a>
+            <a href="#" class="nav__link">
+              <i class="material-icons nav__icon">lock</i>
+              <span class="nav__text">Privacy</span>
+            </a>
+            <a href="#" class="nav__link">
+              <i class="material-icons nav__icon">settings</i>
+              <span class="nav__text">Settings</span>
+            </a>
+          </nav>
+    <!-- <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">About</a></li>
+    </ul> -->
+  </div>
+  
+  <script>
+    const toggle = document.getElementById('toggle');
+    const sidebar = document.getElementById('sidebar');
+
+    document.onclick = function(e){
+      if (e.target.id !== 'sidebar' && e.target.id !== 'toggle')
+      {
+        toggle.classList.remove('active');
+        sidebar.classList.remove('active')
+      }
+    }
+
+
+    toggle.onclick = function () {
+      toggle.classList.toggle('active');
+      sidebar.classList.toggle('active')
+    }
+    // bottom nav
+   
+  </script>
+</body>
+</html>
